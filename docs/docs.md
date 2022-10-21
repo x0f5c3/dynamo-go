@@ -1,51 +1,34 @@
-# cli-template
+# dynamo-go
 
 ## Usage
-> This cli template shows the date and time in the terminal
+> Secure self-hosted dynamic DNS server
 
-cli-template
-
-## Description
-
-```
-This is a template CLI application, which can be used as a boilerplate for awesome CLI tools written in Go.
-This template prints the date or time to the terminal.
-```
-## Examples
-
-```bash
-cli-template date
-cli-template date --format 20060102
-cli-template time
-cli-template time --live
-```
+dynamo-go
 
 ## Flags
 |Flag|Usage|
 |----|-----|
 |`--debug`|enable debug messages|
-|`--disable-update-checks`|disables update checks|
+|`--no-update`|disables update checks|
 |`--raw`|print unstyled raw output (set it if output is written to a file)|
 
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion`|Generate the autocompletion script for the specified shell|
-|`cli-template date`|Prints the current date.|
-|`cli-template help`|Help about any command|
-|`cli-template time`|Prints the current time|
+|`dynamo-go completion`|Generate the autocompletion script for the specified shell|
+|`dynamo-go help`|Help about any command|
 # ... completion
-`cli-template completion`
+`dynamo-go completion`
 
 ## Usage
 > Generate the autocompletion script for the specified shell
 
-cli-template completion
+dynamo-go completion
 
 ## Description
 
 ```
-Generate the autocompletion script for cli-template for the specified shell.
+Generate the autocompletion script for dynamo-go for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 
 ```
@@ -53,17 +36,17 @@ See each sub-command's help for details on how to use the generated script.
 ## Commands
 |Command|Usage|
 |-------|-----|
-|`cli-template completion bash`|Generate the autocompletion script for bash|
-|`cli-template completion fish`|Generate the autocompletion script for fish|
-|`cli-template completion powershell`|Generate the autocompletion script for powershell|
-|`cli-template completion zsh`|Generate the autocompletion script for zsh|
+|`dynamo-go completion bash`|Generate the autocompletion script for bash|
+|`dynamo-go completion fish`|Generate the autocompletion script for fish|
+|`dynamo-go completion powershell`|Generate the autocompletion script for powershell|
+|`dynamo-go completion zsh`|Generate the autocompletion script for zsh|
 # ... completion bash
-`cli-template completion bash`
+`dynamo-go completion bash`
 
 ## Usage
 > Generate the autocompletion script for bash
 
-cli-template completion bash
+dynamo-go completion bash
 
 ## Description
 
@@ -75,17 +58,17 @@ If it is not installed already, you can install it via your OS's package manager
 
 To load completions in your current shell session:
 
-	source <(cli-template completion bash)
+	source <(dynamo-go completion bash)
 
 To load completions for every new session, execute once:
 
 #### Linux:
 
-	cli-template completion bash > /etc/bash_completion.d/cli-template
+	dynamo-go completion bash > /etc/bash_completion.d/dynamo-go
 
 #### macOS:
 
-	cli-template completion bash > /usr/local/etc/bash_completion.d/cli-template
+	dynamo-go completion bash > /usr/local/etc/bash_completion.d/dynamo-go
 
 You will need to start a new shell for this setup to take effect.
 
@@ -96,12 +79,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion fish
-`cli-template completion fish`
+`dynamo-go completion fish`
 
 ## Usage
 > Generate the autocompletion script for fish
 
-cli-template completion fish
+dynamo-go completion fish
 
 ## Description
 
@@ -110,11 +93,11 @@ Generate the autocompletion script for the fish shell.
 
 To load completions in your current shell session:
 
-	cli-template completion fish | source
+	dynamo-go completion fish | source
 
 To load completions for every new session, execute once:
 
-	cli-template completion fish > ~/.config/fish/completions/cli-template.fish
+	dynamo-go completion fish > ~/.config/fish/completions/dynamo-go.fish
 
 You will need to start a new shell for this setup to take effect.
 
@@ -125,12 +108,12 @@ You will need to start a new shell for this setup to take effect.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion powershell
-`cli-template completion powershell`
+`dynamo-go completion powershell`
 
 ## Usage
 > Generate the autocompletion script for powershell
 
-cli-template completion powershell
+dynamo-go completion powershell
 
 ## Description
 
@@ -139,7 +122,7 @@ Generate the autocompletion script for powershell.
 
 To load completions in your current shell session:
 
-	cli-template completion powershell | Out-String | Invoke-Expression
+	dynamo-go completion powershell | Out-String | Invoke-Expression
 
 To load completions for every new session, add the output of the above command
 to your powershell profile.
@@ -151,12 +134,12 @@ to your powershell profile.
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
 # ... completion zsh
-`cli-template completion zsh`
+`dynamo-go completion zsh`
 
 ## Usage
 > Generate the autocompletion script for zsh
 
-cli-template completion zsh
+dynamo-go completion zsh
 
 ## Description
 
@@ -172,11 +155,11 @@ To load completions for every new session, execute once:
 
 #### Linux:
 
-	cli-template completion zsh > "${fpath[1]}/_cli-template"
+	dynamo-go completion zsh > "${fpath[1]}/_dynamo-go"
 
 #### macOS:
 
-	cli-template completion zsh > /usr/local/share/zsh/site-functions/_cli-template
+	dynamo-go completion zsh > /usr/local/share/zsh/site-functions/_dynamo-go
 
 You will need to start a new shell for this setup to take effect.
 
@@ -186,50 +169,20 @@ You will need to start a new shell for this setup to take effect.
 |Flag|Usage|
 |----|-----|
 |`--no-descriptions`|disable completion descriptions|
-# ... date
-`cli-template date`
-
-## Usage
-> Prints the current date.
-
-cli-template date
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-f, --format string`|specify a custom date format (default "02 Jan 06")|
 # ... help
-`cli-template help`
+`dynamo-go help`
 
 ## Usage
 > Help about any command
 
-cli-template help [command]
+dynamo-go help [command]
 
 ## Description
 
 ```
 Help provides help for any command in the application.
-Simply type cli-template help [path to command] for full details.
+Simply type dynamo-go help [path to command] for full details.
 ```
-# ... time
-`cli-template time`
-
-## Usage
-> Prints the current time
-
-cli-template time
-
-## Description
-
-```
-You can print a live clock with the '--live' flag!
-```
-
-## Flags
-|Flag|Usage|
-|----|-----|
-|`-l, --live`|live output|
 
 
 ---

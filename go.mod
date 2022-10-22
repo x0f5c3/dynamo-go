@@ -8,6 +8,7 @@ require (
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.49
 	github.com/spf13/cobra v1.4.0
+	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 )
 
 require (
@@ -15,6 +16,7 @@ require (
 	atomicgo.dev/keyboard v0.2.8 // indirect
 	github.com/containerd/console v1.0.3 // indirect
 	github.com/go-resty/resty/v2 v2.1.1-0.20191201195748-d7b97669fe48 // indirect
+	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/gookit/color v1.5.2 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/lithammer/fuzzysearch v1.1.5 // indirect
@@ -29,5 +31,6 @@ require (
 	golang.org/x/sys v0.0.0-20220704084225-05e143d24a9e // indirect
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/appengine v1.6.1 // indirect
 	gopkg.in/ini.v1 v1.66.6 // indirect
 )

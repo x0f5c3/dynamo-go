@@ -6,11 +6,11 @@ before:
 gomod:
   proxy: true
 builds:
-  - env:
+  - id: "win-lin"
+    env:
       - CGO_ENABLED=0
     goos:
       - linux
-      - darwin
       - windows
     goarch:
       - 386
@@ -18,10 +18,31 @@ builds:
       - arm
       - arm64
     mod_timestamp: '{{ .CommitTimestamp }}'
+    goamd64:
+      - v3
     flags:
       - -trimpath
     ldflags:
       - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=pterm
+  - id: "darwin"
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+    goamd64:
+      - v3
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=pterm
+
+universal_binaries:
+  - id: darwin
+    name_template: '{{.ProjectName}}_{{.Version}}'
+    replace: true
 checksum:
   name_template: '{{ .ProjectName }}_checksums.txt'
 changelog:
@@ -37,8 +58,12 @@ changelog:
       - go mod tidy
 archives:
   - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+    builds:
+      - "win-lin"
+    files:
+      - LICENSE
+      - README.md
     replacements:
-      darwin: Darwin
       linux: Linux
       windows: Windows
     format_overrides:

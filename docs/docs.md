@@ -186,4 +186,4 @@ Simply type dynamo-go help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 22 October 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 25 October 2022**

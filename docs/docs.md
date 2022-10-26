@@ -8,7 +8,7 @@ dynamo-go
 ## Flags
 |Flag|Usage|
 |----|-----|
-|`--debug`|enable debug messages|
+|`-d, --debug`|enable debug messages|
 |`--no-update`|disables update checks|
 |`--raw`|print unstyled raw output (set it if output is written to a file)|
 
@@ -186,4 +186,4 @@ Simply type dynamo-go help [path to command] for full details.
 
 
 ---
-> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 25 October 2022**
+> **Documentation automatically generated with [PTerm](https://github.com/pterm/cli-template) on 26 October 2022**

@@ -7,7 +7,7 @@ require (
 	github.com/linode/linodego v1.9.3
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.49
-	github.com/spf13/cobra v1.4.0
+	github.com/spf13/cobra v1.6.1
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 )
 
@@ -18,7 +18,7 @@ require (
 	github.com/go-resty/resty/v2 v2.1.1-0.20191201195748-d7b97669fe48 // indirect
 	github.com/golang/protobuf v1.3.2 // indirect
 	github.com/gookit/color v1.5.2 // indirect
-	github.com/inconshreveable/mousetrap v1.0.0 // indirect
+	github.com/inconshreveable/mousetrap v1.0.1 // indirect
 	github.com/lithammer/fuzzysearch v1.1.5 // indirect
 	github.com/mattn/go-runewidth v0.0.13 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect

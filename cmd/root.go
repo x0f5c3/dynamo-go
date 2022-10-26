@@ -52,7 +52,7 @@ func checkUpdate() {
 func init() {
 	// Adds global flags for PTerm settings.
 	// Fill the empty strings with the shorthand variant (if you like to have one).
-	rootCmd.PersistentFlags().BoolVarP(&pterm.PrintDebugMessages, "debug", "", false, "enable debug messages")
+	rootCmd.PersistentFlags().BoolVarP(&pterm.PrintDebugMessages, "debug", "d", false, "enable debug messages")
 	rootCmd.PersistentFlags().BoolVarP(&pterm.RawOutput, "raw", "", false, "print unstyled raw output (set it if output is written to a file)")
 	rootCmd.PersistentFlags().BoolVar(&pcli.DisableUpdateChecking, "no-update", false, "disables update checks")
 

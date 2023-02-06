@@ -3,7 +3,7 @@ module github.com/x0f5c3/dynamo-go
 go 1.19
 
 require (
-	github.com/joho/godotenv v1.4.0
+	github.com/joho/godotenv v1.5.1
 	github.com/linode/linodego v1.9.3
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.49

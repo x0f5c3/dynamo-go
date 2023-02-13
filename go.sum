@@ -133,8 +133,8 @@ github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515/go.mod h1:+0opPa2QZZtGFB
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/linode/linodego v1.9.3 h1:+lxNZw4avRxhCqGjwfPgQ2PvMT+vOL0OMsTdzixR7hQ=
-github.com/linode/linodego v1.9.3/go.mod h1:h6AuFR/JpqwwM/vkj7s8KV3iGN8/jxn+zc437F8SZ8w=
+github.com/linode/linodego v1.14.1 h1:uGxQyy0BidoEpLGdvfi4cPgEW+0YUFsEGrLEhcTfjNc=
+github.com/linode/linodego v1.14.1/go.mod h1:NJlzvlNtdMRRkXb0oN6UWzUkj6t+IBsyveHgZ5Ppjyk=
 github.com/lithammer/fuzzysearch v1.1.5 h1:Ag7aKU08wp0R9QCfF4GoGST9HbmAIeLP7xwMrOBEp1c=
 github.com/lithammer/fuzzysearch v1.1.5/go.mod h1:1R1LRNk7yKid1BaQkmuLQaHruxcC4HmAH30Dh61Ih1Q=
 github.com/magiconair/properties v1.8.1/go.mod h1:PppfXfuXeibc/6YijjN8zIbojt8czPbwD3XqdrwzmxQ=

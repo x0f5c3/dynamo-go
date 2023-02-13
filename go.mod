@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/joho/godotenv v1.4.0
-	github.com/linode/linodego v1.9.3
+	github.com/linode/linodego v1.14.1
 	github.com/pterm/pcli v0.4.6
 	github.com/pterm/pterm v0.12.49
 	github.com/spf13/cobra v1.4.0
